@@ -1,0 +1,220 @@
+
+@font-face {
+    font-family: "Main";
+    src: url("../fonts/main.woff2") format("woff2"),
+           url("../fonts/main.woff") format("woff");
+   }
+
+   @font-face {
+    font-family: "Forum";
+    src: url("../fonts/forum.woff2") format("woff2"),
+           url("../fonts/forum.woff") format("woff");
+   }
+   
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+img{
+    width: 100%;
+    display: block;
+}
+
+.app {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../image/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-family: "Main";
+}
+.logo{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 14%;
+}
+
+.main {
+    width: 80%;
+    margin: 12% auto;
+    display: block;
+    position: relative;
+    .img-notice{
+        width: 50%;
+        transition: all ease 1s;
+    }
+    .block{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 140%;
+        background: #161924;
+        transition: all ease 1s;
+    }
+    .block2{
+        left: 21%;
+    }
+    .block3{
+        left: 41%;
+    }
+
+    .text{
+        opacity: 0;
+        position: absolute;
+        transition: all ease 1s;
+        
+        top: 0;
+        left: 27%;
+        width: 32.5%;
+        font-family: 'Main';
+        padding: 20px;
+        .t-title{
+            color: white;
+            font-size: 3vw;
+            text-transform: uppercase;
+        }
+        .t-subtitle{
+            display: flex;
+            justify-content: flex-start;
+            
+            align-items: center;
+            .ts-text{
+                flex-basis: 50%;
+                margin-right: 2vw;
+                color: #30333d;
+                font-size: 2vw;
+            }
+            .ts-rating {
+                flex-basis: 20%;
+            }
+        }
+        .parag{
+            margin-top: 1vw;
+            p {
+                font-family: 'Forum';
+                font-size: 1.1vw;
+                color: rgb(207, 207, 207);
+                margin-bottom: 1vw;
+            }
+        }
+        .icons {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .icon {
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                margin-right: 0.5vw;
+                .i-text{
+                    color: white;
+                    margin-left: 0.7vw;
+                    font-size: 0.8vw;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .button{
+            width: 50%;
+            margin: 5% auto;
+            position: relative;
+            .b-text{
+                position: absolute;
+                top: 30%;
+                left: 0;
+                width: 100%;
+                color: white;
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 1.2vw;
+            }
+        }
+
+    }
+    .text2{
+        left: 48%;
+    }
+    .text3{
+        left: 68%;
+    }
+    .card {
+        position: absolute;
+        width: 18%;
+        bottom: -32%;
+        transition: all ease 1s;
+        box-shadow: 1px 1px 10px rgba(100, 100, 100, 0.473);
+    }
+    .card1{left: 40%;}
+    .card2{left: 60%;}
+    .card3{left: 80%;}
+}
+
+.main1{
+    .img-notice{opacity: 0;}
+    .block1{
+        width: 62%;
+    }
+    .text1{
+        animation:txt 1s ease;
+        animation-fill-mode: forwards;
+        animation-delay: .5s;
+    }
+    .card1{
+        left: 2%;
+        width: 25%;
+    }
+}
+
+.main2{
+    .img-notice{opacity: 0;}
+    .block2{
+        width: 62%;
+    }
+    .text2{
+        animation:txt 1s ease;
+        animation-fill-mode: forwards;
+        animation-delay: .5s;
+    }
+    .card1{
+        left: 2%;
+       
+    }
+    .card2{
+        left: 23%;
+        width: 25%;
+    }
+}
+.main3{
+    .img-notice{opacity: 0;}
+    .block3{
+        width: 62%;
+    }
+    .text3{
+        animation:txt 1s ease;
+        animation-fill-mode: forwards;
+        animation-delay: .5s;
+    }
+    .card1{
+        left: 2%;
+       
+    }
+    .card2{
+        left: 22%;
+        
+    }
+    .card3{
+        left: 43%;
+        width: 25%;
+    }
+}
+
+@keyframes txt {
+    from {transform: translateY(2%);opacity: 0;}
+    to{transform: translateY(0);opacity: 1;}
+}

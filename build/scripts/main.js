@@ -1,0 +1,1 @@
+"use strict";window.onload=function(){function n(){$(".main").removeClass("main1 main2 main3")}$(".card1").on("mouseover",function(){n(),$(".main").addClass("main1")}),$(".card2").on("mouseover",function(){n(),$(".main").addClass("main2")}),$(".card3").on("mouseover",function(){n(),$(".main").addClass("main3")}),$(".main").on("mouseleave",function(){n()})};

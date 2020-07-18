@@ -1,0 +1,309 @@
+@font-face {
+  font-family: "Main";
+  src: url("../fonts/main.woff2") format("woff2"), url("../fonts/main.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Forum";
+  src: url("../fonts/forum.woff2") format("woff2"), url("../fonts/forum.woff") format("woff");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url(../image/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  font-family: "Main";
+}
+
+.logo {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 14%;
+}
+
+.main {
+  width: 80%;
+  margin: 12% auto;
+  display: block;
+  position: relative;
+}
+
+.main .img-notice {
+  width: 50%;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.main .block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 140%;
+  background: #161924;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.main .block2 {
+  left: 21%;
+}
+
+.main .block3 {
+  left: 41%;
+}
+
+.main .text {
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+  top: 0;
+  left: 27%;
+  width: 32.5%;
+  font-family: 'Main';
+  padding: 20px;
+}
+
+.main .text .t-title {
+  color: white;
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+
+.main .text .t-subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .text .t-subtitle .ts-text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-right: 2vw;
+  color: #30333d;
+  font-size: 2vw;
+}
+
+.main .text .t-subtitle .ts-rating {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+.main .text .parag {
+  margin-top: 1vw;
+}
+
+.main .text .parag p {
+  font-family: 'Forum';
+  font-size: 1.1vw;
+  color: #cfcfcf;
+  margin-bottom: 1vw;
+}
+
+.main .text .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .text .icons .icon {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 0.5vw;
+}
+
+.main .text .icons .icon .i-text {
+  color: white;
+  margin-left: 0.7vw;
+  font-size: 0.8vw;
+  text-transform: uppercase;
+}
+
+.main .text .button {
+  width: 50%;
+  margin: 5% auto;
+  position: relative;
+}
+
+.main .text .button .b-text {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2vw;
+}
+
+.main .text2 {
+  left: 48%;
+}
+
+.main .text3 {
+  left: 68%;
+}
+
+.main .card {
+  position: absolute;
+  width: 18%;
+  bottom: -32%;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+  -webkit-box-shadow: 1px 1px 10px rgba(100, 100, 100, 0.473);
+          box-shadow: 1px 1px 10px rgba(100, 100, 100, 0.473);
+}
+
+.main .card1 {
+  left: 40%;
+}
+
+.main .card2 {
+  left: 60%;
+}
+
+.main .card3 {
+  left: 80%;
+}
+
+.main1 .img-notice {
+  opacity: 0;
+}
+
+.main1 .block1 {
+  width: 62%;
+}
+
+.main1 .text1 {
+  -webkit-animation: txt 1s ease;
+          animation: txt 1s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.main1 .card1 {
+  left: 2%;
+  width: 25%;
+}
+
+.main2 .img-notice {
+  opacity: 0;
+}
+
+.main2 .block2 {
+  width: 62%;
+}
+
+.main2 .text2 {
+  -webkit-animation: txt 1s ease;
+          animation: txt 1s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.main2 .card1 {
+  left: 2%;
+}
+
+.main2 .card2 {
+  left: 23%;
+  width: 25%;
+}
+
+.main3 .img-notice {
+  opacity: 0;
+}
+
+.main3 .block3 {
+  width: 62%;
+}
+
+.main3 .text3 {
+  -webkit-animation: txt 1s ease;
+          animation: txt 1s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.main3 .card1 {
+  left: 2%;
+}
+
+.main3 .card2 {
+  left: 22%;
+}
+
+.main3 .card3 {
+  left: 43%;
+  width: 25%;
+}
+
+@-webkit-keyframes txt {
+  from {
+    -webkit-transform: translateY(2%);
+            transform: translateY(2%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes txt {
+  from {
+    -webkit-transform: translateY(2%);
+            transform: translateY(2%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
